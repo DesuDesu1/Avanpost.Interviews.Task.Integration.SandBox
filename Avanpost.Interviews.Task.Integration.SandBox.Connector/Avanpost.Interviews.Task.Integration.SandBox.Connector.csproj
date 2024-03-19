@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Avanpost.Interviews.Task.Integration.Data.DbCommon">
+      <HintPath>..\libs\CommonForTest\Avanpost.Interviews.Task.Integration.Data.DbCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Avanpost.Interviews.Task.Integration.Data.Models">
+      <HintPath>..\libs\Models\Avanpost.Interviews.Task.Integration.Data.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
